@@ -43,16 +43,11 @@ docker exec -d ${CONTAINER_NAME} docker-compose -p ${PROJECT_NAME} -f docker-bui
 
 ### Docker Desktop에서
 
-현재 이 레포지토리 이름으로 이미지를 검색하신 뒤 `Run` 단추를 누릅니다.  
+해당 환경에서는 컨테이너 Run시 실행오류를 막을 수 있는 옵션을 설정 불가하므로 파워셸을 이용 부탁드립니다. 😥  
+하지만 파워셸 이용시 생성결과 확인은 가능하십니다.  
 
-![Docker Desktop에서 이미지를 검색한 뒤 찾은 이미지 nginx-poly-layers를 열고 Run 단추를 연 뒤 나온 입력창 꾸러미](./desktop_galmuri.png)
-
-그 다음 Optional settings를 누른 뒤,  
-Container name 란에 컨테이너 이름을,  
-Host port 란에 로드밸런서의 결과를 받을 호스트 인스턴스의 tcp 포트를 적습니다.
-
-실제 결과 확인은 `http://localhost:${HOST_PORT}` 에서 가능합니다.  
-※`docker-compose` 명령으로 인용한 yaml파일이 `docker-build-cp.yaml`인 경우, 불러오는 HTML 파일의 첫 주어가 `Asashio`·`Oshio`·`Michishio`·`Arashio` 순서대로 바뀝니다.  
+실제 접속 결과 확인은 `http://localhost:${HOST_PORT}` 에서 가능합니다.  
+※`docker-compose` 명령으로 인용한 yaml파일이 `docker-build-cp.yaml`인 경우, 불러오는 HTML 파일의 첫 주어가 `Asashio-the nameship-`·`Oshio`·`Michishio`·`Arashio` 순서대로 바뀝니다.  
 
 ## 혹시 컨테이너 속 컨테이너의 상태를 직접 확인하고 싶으시다면
 
