@@ -1,0 +1,10 @@
+[/usr/lib/tmpfiles.d/journal-nocow.conf:26] Failed to resolve specifier: uninitialized /etc detected, skipping
+All rules containing unresolvable specifiers will be skipped.
+Created symlink /etc/systemd/system/console-getty.service -> /dev/null.
+Created symlink /etc/systemd/system/dev-hugepages.mount -> /dev/null.
+Created symlink /etc/systemd/system/getty.target -> /dev/null.
+Created symlink /etc/systemd/system/sys-fs-fuse-connections.mount -> /dev/null.
+Created symlink /etc/systemd/system/systemd-logind.service -> /dev/null.
+Created symlink /etc/systemd/system/systemd-remount-fs.service -> /dev/null.
+rm: refusing to remove '.' or '..' directory: skipping '/tmp/.'
+rm: refusing to remove '.' or '..' directory: skipping '/tmp/..'

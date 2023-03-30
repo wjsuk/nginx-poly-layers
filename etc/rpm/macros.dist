@@ -1,0 +1,16 @@
+# dist macros.
+
+%__bootstrap ~bootstrap
+%rocky_ver 8
+%rocky 8
+%centos_ver 8
+%centos 8
+%rhel 8
+%dist %{!?distprefix0:%{?distprefix}}%{expand:%{lua:for i=0,9999 do print("%{?distprefix" .. i .."}") end}}.el8%{?distsuffix}%{?with_bootstrap:~bootstrap}
+%el8 1
+
+%dist_vendor         RESF
+%dist_name           %{distro}
+%dist_home_url       https://rockylinux.org/
+%dist_bug_report_url https://bugs.rockylinux.org/
+%dist_debuginfod_url https://debuginfod.rockylinux.org/

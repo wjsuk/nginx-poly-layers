@@ -1,0 +1,26 @@
+version: '3'
+services:
+  asashio:
+    build:
+      dockerfile: ./Dockerfile.01
+    ports:
+      -  "8081:80"
+
+  oshio:
+    build:
+      dockerfile: ./Dockerfile.02
+    ports:
+      -  "8082:80"
+
+  michishio:
+    build: 
+      dockerfile: ./Dockerfile.03
+    ports:
+      -  "8083:80"
+
+  arashio:
+    build: 
+      dockerfile: ./Dockerfile.00
+    ports:
+      -  "8084:80"
+
